@@ -18,9 +18,7 @@ const Template: Story<CardProps> = (args) => (
     <div style={{ marginBottom: "1rem" }}>
       Some example description about this session.
     </div>
-    <Button primary backgroundColor="black">
-      View
-    </Button>
+    <Button primary>View</Button>
   </Card>
 );
 
