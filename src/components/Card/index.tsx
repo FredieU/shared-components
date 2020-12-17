@@ -6,7 +6,7 @@ export interface CardProps {
   bordered?: boolean;
   children: ReactNode;
   className?: string;
-  raised: boolean;
+  raised?: boolean;
 }
 
 export const Card: FC<CardProps> = ({

@@ -1,7 +1,9 @@
 {
   "name": "shared-components",
+  "description": "A library of reusable React TS components",
   "version": "0.1.0",
   "private": true,
+  "main": "index.ts",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
