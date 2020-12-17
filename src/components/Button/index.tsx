@@ -16,7 +16,7 @@ export const Button: React.FC<ButtonProps> = ({
   backgroundColor,
   children,
   className,
-  primary = false,
+  primary = true,
   size = "medium",
   type = "button",
   ...props
