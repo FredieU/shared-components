@@ -1,0 +1,13 @@
+.card {
+  padding: 1rem;
+}
+
+.card--bordered {
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+
+.card--raised {
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 10px 0px;
+}

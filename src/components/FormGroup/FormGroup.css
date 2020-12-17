@@ -1,0 +1,8 @@
+.form-group {
+  outline: none;
+  line-height: 1rem;
+}
+
+.form-group__error {
+  color: red;
+}
