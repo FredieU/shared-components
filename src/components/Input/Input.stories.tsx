@@ -23,12 +23,13 @@ Default.args = {
 export const WithOneError = Template.bind({});
 WithOneError.args = {
   ...Default.args,
-  errors: ["Username is already taken"],
+  errors: ["Email is already registered"],
 };
 
 export const WithManyErrors = Template.bind({});
 WithManyErrors.args = {
   ...Default.args,
+  label: "Username",
   errors: [
     "Username must be at least 3 characters long",
     "Username must only contain alphanumeric characters (e.g. a-z, 0-9)",

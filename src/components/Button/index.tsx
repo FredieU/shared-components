@@ -1,11 +1,11 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import classnames from "classnames";
 import "./Button.css";
 
 export interface ButtonProps {
   backgroundColor?: string;
-  className: string;
-  label: string;
+  children: ReactNode;
+  className?: string;
   onClick?: () => void;
   primary?: boolean;
   size?: "small" | "medium" | "large";
@@ -14,8 +14,8 @@ export interface ButtonProps {
 
 export const Button: React.FC<ButtonProps> = ({
   backgroundColor,
+  children,
   className,
-  label,
   primary = false,
   size = "medium",
   type = "button",
@@ -33,7 +33,7 @@ export const Button: React.FC<ButtonProps> = ({
       style={{ backgroundColor }}
       {...props}
     >
-      {label}
+      {children}
     </button>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
 import { Card, CardProps } from ".";
+import { Button } from "../Button";
 
 export default {
   title: "Components/Card",
@@ -9,9 +10,17 @@ export default {
 
 const Template: Story<CardProps> = (args) => (
   <Card {...args}>
-    <div>Card title</div>
-    <div>Card description</div>
-    <button>Submit</button>
+    <div
+      style={{ fontSize: "1.2rem", fontWeight: "bold", marginBottom: "0.5rem" }}
+    >
+      Example session name
+    </div>
+    <div style={{ marginBottom: "1rem" }}>
+      Some example description about this session.
+    </div>
+    <Button primary backgroundColor="black">
+      View
+    </Button>
   </Card>
 );
 
