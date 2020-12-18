@@ -1,13 +1,12 @@
 .card {
   padding: 1rem;
+  border-radius: 1rem;
 }
 
 .card--bordered {
-  border: 2px solid black;
-  border-radius: 1rem;
+  border: 1px solid lightgray;
 }
 
 .card--raised {
-  border-radius: 1rem;
   box-shadow: rgb(0 0 0 / 40%) 0px 0px 20px 0px;
 }

@@ -10,10 +10,10 @@ export interface CardProps {
 }
 
 export const Card: FC<CardProps> = ({
-  bordered = false,
+  bordered = true,
   children,
   className,
-  raised = true,
+  raised = false,
   ...props
 }) => {
   const cardClasses = classnames("card", className, {
