@@ -1,6 +1,7 @@
 .card {
   padding: 1rem;
   border-radius: 1rem;
+  background-color: white;
 }
 
 .card--bordered {
