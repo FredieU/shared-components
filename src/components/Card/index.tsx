@@ -7,6 +7,7 @@ export interface CardProps {
   children: ReactNode;
   className?: string;
   raised?: boolean;
+  rounded?: boolean;
 }
 
 export const Card: FC<CardProps> = ({
@@ -14,11 +15,13 @@ export const Card: FC<CardProps> = ({
   children,
   className,
   raised = false,
+  rounded = true,
   ...props
 }) => {
   const cardClasses = classnames("card", className, {
     "card--bordered": bordered,
     "card--raised": raised,
+    "card--rounded": rounded,
   });
 
   return (
