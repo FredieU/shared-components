@@ -34,6 +34,7 @@ Default.args = {
   actions: <Button>Log in</Button>,
   logo: (
     <img
+      alt="header logo"
       style={{ height: "40px" }}
       src="https://cdn.icon-icons.com/icons2/2148/PNG/512/storybook_icon_131971.png"
     />
