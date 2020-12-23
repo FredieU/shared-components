@@ -23,11 +23,12 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "build": "build-storybook -s public",
+    "deploy": "firebase deploy",
+    "eject": "react-scripts eject",
     "start": "start-storybook -p 6006 -s public",
     "start:server": "react-scripts start",
-    "build": "build-storybook -s public",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": [
