@@ -20,7 +20,11 @@ export const FormGroup: FC<FormGroupProps> = ({
     <div className={formGroupClasses} {...props}>
       {children}
       {errors &&
-        errors.map((error) => <div className="form-group__error">{error}</div>)}
+        errors.map((error, index) => (
+          <p key={`${index}${error}`} className="form-group__error">
+            {error}
+          </p>
+        ))}
     </div>
   );
 };

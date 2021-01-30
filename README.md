@@ -1,6 +1,6 @@
 # Shared Components
 
-A library of shared React TS components viewable with [Storybook](https://storybook.js.org/).
+A library of custom React TS components viewable on [components.funabia.com](https://components.funabia.com) with [Storybook](https://storybook.js.org/).
 
 ## Setting up
 

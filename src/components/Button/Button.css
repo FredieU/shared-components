@@ -8,9 +8,14 @@
   outline: none;
 }
 
+.btn--disabled:disabled {
+  cursor: unset;
+  background-color: gray;
+}
+
 .btn--primary {
   color: white;
-  background-color: #1ea7fd;
+  background-color: black;
 }
 
 .btn--secondary {

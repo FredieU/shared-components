@@ -1,31 +1,41 @@
-import React, { FC, InputHTMLAttributes } from "react";
+import React, {
+  ComponentPropsWithRef,
+  forwardRef,
+  ReactElement,
+  Ref,
+} from "react";
 import classnames from "classnames";
 import "./Input.css";
 
-export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+export type InputProps = ComponentPropsWithRef<"input"> & {
   className?: string;
-  hasErrors: boolean;
+  hasErrors?: boolean;
   label: string;
   name: string;
-}
-
-export const Input: FC<InputProps> = ({
-  className,
-  hasErrors,
-  label,
-  name,
-  ...props
-}) => {
-  const inputClasses = classnames("input", {
-    "input--errored": hasErrors,
-  });
-
-  return (
-    <>
-      <label className="input__label" htmlFor={name}>
-        {label}
-      </label>
-      <input id={name} className={inputClasses} {...props} />
-    </>
-  );
 };
+
+export const Input = forwardRef(
+  (
+    { className, hasErrors = false, label, name, ...rest }: InputProps,
+    ref?: Ref<HTMLInputElement>
+  ): ReactElement => {
+    const inputClasses = classnames("input", {
+      "input--errored": hasErrors,
+    });
+
+    return (
+      <>
+        <label className="input__label" htmlFor={name}>
+          {label}
+        </label>
+        <input
+          className={inputClasses}
+          name={name}
+          id={name}
+          ref={ref}
+          {...rest}
+        />
+      </>
+    );
+  }
+);
