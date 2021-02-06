@@ -4,16 +4,19 @@
   "version": "0.1.0",
   "private": true,
   "main": "dist/bundle.js",
-  "files": ["dist", "src"],
+  "files": [
+    "dist",
+    "src"
+  ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/FredieU/shared-components.git"
   },
   "scripts": {
     "build": "build-storybook -s public",
-    "build-package": "npx rollup --config",
     "deploy": "firebase deploy",
     "eject": "react-scripts eject",
+    "prepare": "npx rollup --config",
     "start": "start-storybook -p 6006 -s public",
     "start:server": "react-scripts start",
     "test": "react-scripts test"
