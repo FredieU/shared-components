@@ -16,7 +16,7 @@
     "build": "build-storybook -s public",
     "deploy": "firebase deploy",
     "eject": "react-scripts eject",
-    "prepare": "npx rollup --config",
+    "postinstall": "rm -rf dist && rollup --config",
     "start": "start-storybook -p 6006 -s public",
     "start:server": "react-scripts start",
     "test": "react-scripts test"
