@@ -11,6 +11,7 @@
 # production
 /storybook-static
 /build
+/dist
 .firebase
 
 # misc
